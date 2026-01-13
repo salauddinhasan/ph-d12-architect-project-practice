@@ -149,16 +149,16 @@
     gap: 30px;
     justify-content: space-between;
 }
-.experience-image {
+/* .experience-image {
     max-width: 700px;
-}
+} */
 .experience-image img {
     width: 100%;
 }
-.experience-content {
+/* .experience-content {
     max-width: 600px;
 
-}
+} */
 
 .experience-title {
     font-size: 3rem;
@@ -254,7 +254,21 @@
         margin-bottom: 20px;
     }
     .features-content {
-        text-align: center;
-        padding: 20px;
+         text-align: center;
+         padding: 15px;
     }
+ }
+
+ @media screen and (min-width:768px) and (max-width:924px) {
+    .features-content {
+        padding: 10px;
+    }
+ 
+ 
+    .experience-container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
  }
