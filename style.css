@@ -149,16 +149,17 @@
     gap: 30px;
     justify-content: space-between;
 }
-/* .experience-image {
-    max-width: 700px;
-} */
+ /* .experience-image {
+    max-width: 600px;
+}  */
 .experience-image img {
     width: 100%;
+    size: cover;
 }
-/* .experience-content {
+  .experience-content {
     max-width: 600px;
 
-} */
+} 
 
 .experience-title {
     font-size: 3rem;
@@ -197,6 +198,31 @@
     line-height: 26px;
 }
 
+/* facts-section */
+
+.facts-section {
+    padding: 60px 15px;
+}
+
+.facts-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+.facts-items {
+    padding: 45px 55px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    border-radius: 5px;
+}
+.facts-items h3 {
+    font-size: 3rem;
+    columns: #424242;
+}
+.facts-items p {
+    color: #727272;
+}
+
  /* responsive mobile */
  @media screen and (max-width:576px) {
     .navbar, 
@@ -206,7 +232,8 @@
     }
     .navbar ul, 
     .features-image, 
-    .experience-container{
+    .experience-container, 
+    .facts-cards{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
@@ -242,6 +269,10 @@
     .experience-container{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .facts-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .hero-content {
