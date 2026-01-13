@@ -140,13 +140,15 @@
 
  /* responsive mobile */
  @media screen and (max-width:576px) {
-    .navbar {
+    .navbar, 
+    .features-wrapper{
         flex-direction: column;
         text-align: center;
     }
-    .navbar ul {
+    .navbar ul, 
+    .features-image{
         display: grid;
-        grid-template-columns: repeat( 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
     .hero-section {
         padding: 15px;
@@ -161,6 +163,11 @@
         text-align: center;
         margin-bottom: 20px;
     }
+    .features-content {
+        padding: 10px;
+        text-align: center;
+    }
+
  }
 
  /* responsive  tablet*/
@@ -170,7 +177,8 @@
         flex-direction: column;
         text-align: center;
     }
-    .header-section {
+    .header-section, 
+    .features-wrapper{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
@@ -180,8 +188,12 @@
     }
         .hero-content h2{
         font-size: 3.1rem;
-        padding:0px;
+        padding:10px;
         text-align: center;
         margin-bottom: 20px;
+    }
+    .features-content {
+        text-align: center;
+        padding: 20px;
     }
  }
