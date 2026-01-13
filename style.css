@@ -90,3 +90,29 @@
  .hero-image img {
     width: 100%;
  }
+
+
+ /* responsive  */
+ @media screen and (max-width:576px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar ul {
+        display: grid;
+        grid-template-columns: repeat( 1fr);
+    }
+    .hero-section {
+        padding: 15px;
+    }
+    .hero-content {
+        padding-top: 20px;
+    }
+
+    .hero-content h2{
+        font-size: 3.1rem;
+        padding:0px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+ }
