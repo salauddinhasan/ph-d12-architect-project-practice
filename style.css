@@ -149,17 +149,14 @@
     gap: 30px;
     justify-content: space-between;
 }
- /* .experience-image {
-    max-width: 600px;
-}  */
+ .experience-image ,
+ .experience-content{
+    max-width: 630px;
+} 
 .experience-image img {
     width: 100%;
-    size: cover;
 }
-  .experience-content {
-    max-width: 600px;
-
-} 
+ 
 
 .experience-title {
     font-size: 3rem;
@@ -223,6 +220,34 @@
     color: #727272;
 }
 
+.sponsors-section, .footer-section {
+    padding: 60px 0px;
+}
+
+.sponsors-content {
+    text-align: center;
+    line-height: 50px;
+}
+.sponsors-content h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #131313;
+}
+.sponsors-content img {
+    padding: 30px;
+    margin: 0 auto;
+    filter: grayscale(100%);
+}
+.footer-content {
+    text-align: center;
+    background-color: #FFF4E7;
+    border: none;
+    padding:25px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+    color: #424242;
+}
  /* responsive mobile */
  @media screen and (max-width:576px) {
     .navbar, 
